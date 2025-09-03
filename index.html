@@ -615,6 +615,58 @@
                 height: 40px;
             }
         }
+
+        .icon-circle {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(212, 175, 55, 0.12);
+    transition: box-shadow 0.3s, transform 0.3s;
+    border: 2px solid rgba(255,255,255,0.08);
+}
+.icon-circle img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+.social-icon-link {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+.social-icon-link:hover .icon-circle {
+    box-shadow: 0 8px 32px rgba(212, 175, 55, 0.25);
+    transform: scale(1.08);
+}
+@media (max-width: 768px) {
+    .logo-showcase {
+        gap: 1.2rem;
+    }
+    .icon-circle {
+        width: 54px;
+        height: 54px;
+    }
+    .icon-circle img {
+        width: 28px;
+        height: 28px;
+    }
+}
+@media (max-width: 480px) {
+    .logo-showcase {
+        gap: 0.7rem;
+    }
+    .icon-circle {
+        width: 40px;
+        height: 40px;
+    }
+    .icon-circle img {
+        width: 20px;
+        height: 20px;
+    }
+}
     </style>
 </head>
 <body>
@@ -673,18 +725,28 @@
                     <div class="mockup-placeholder">
                         <img src="Ceylon-kiwi logo.jpg" alt="Ceylon Kiwi Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
                     </div>
-                    <div class="logo-showcase">
-                        <div class="logo-item">
-                            <img src="Logo - facebook.png" alt="Facebook Logo" style="width: 30px; height: 30px; object-fit: contain;">
-                        </div>
-                        <div class="logo-item">
-                            <img src="Logo - Insta.png" alt="Instagram Logo" style="width: 30px; height: 30px; object-fit: contain;">
-                        </div>
-                        <div class="logo-item">
-                            <img src="Logo - tikto.png" alt="TikTok Logo" style="width: 30px; height: 30px; object-fit: contain;">
-                        </div>
-                        <div class="logo-item">
-                            <img src="Logo - X.png" alt="X (Twitter) Logo" style="width: 30px; height: 30px; object-fit: contain;">
+                    <div class="social-links-container">
+                        <div class="logo-showcase" style="display: flex; justify-content: center; gap: 2.5rem;">
+                            <a href="https://www.facebook.com/ceylonkiwiofficial/" target="_blank" class="social-icon-link">
+                                <div class="icon-circle">
+                                    <img src="Logo - facebook.png" alt="Facebook Page">
+                                </div>
+                            </a>
+                            <a href="https://www.facebook.com/groups/ceylonkiwi/" target="_blank" class="social-icon-link">
+                                <div class="icon-circle">
+                                    <img src="Logo - facebook.png" alt="Facebook Group">
+                                </div>
+                            </a>
+                            <a href="https://www.tiktok.com/@ceylonkiwiofficial" target="_blank" class="social-icon-link">
+                                <div class="icon-circle">
+                                    <img src="Logo - tikto.png" alt="TikTok">
+                                </div>
+                            </a>
+                            <a href="https://x.com/CeylonKiwi" target="_blank" class="social-icon-link">
+                                <div class="icon-circle">
+                                    <img src="Logo - X.png" alt="X (Twitter)">
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
